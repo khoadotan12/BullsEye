@@ -12,12 +12,16 @@ class ViewController: UIViewController {
     var currentValue: Int = 0
     @IBOutlet weak var slider: UISlider!
     var targetValue: Int = 0
-    @IBOutlet weak var targetValueLabel: UILabel!
+    @IBOutlet weak var targetLabel: UILabel!
+    @IBOutlet weak var roundLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         startNewRound()
+        scoreLabel.text = "0"
+        roundLabel.text = "1"
     }
     
     @IBAction func showHitMeAlert() {
@@ -38,8 +42,8 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         targetValue = Int.random(in: 1...100)
-        targetValueLabel.text = String(targetValue)
+        targetLabel.text = String(targetValue)
     }
-
+    
 }
 
