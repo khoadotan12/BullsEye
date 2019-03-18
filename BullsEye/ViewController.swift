@@ -25,8 +25,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showHitMeAlert() {
-        let message = "The value of the slider is now: \(currentValue)"
-        print(abs(currentValue-targetValue))
+        let difference = abs(currentValue - targetValue)
+        let points = 100 - difference
+        let message = "You scored \(points) points"
         let alert = UIAlertController(title: "Hello world!", message:  message, preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Awesome", style: .cancel, handler: nil)
