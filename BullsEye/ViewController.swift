@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         startNewRound()
-        scoreLabel.text = "0"
         roundLabel.text = "1"
     }
     
@@ -31,7 +30,6 @@ class ViewController: UIViewController {
         score += points
         let message = "You scored \(points) points"
         let alert = UIAlertController(title: "Hello world!", message:  message, preferredStyle: .alert)
-        
         let action = UIAlertAction(title: "Awesome", style: .cancel, handler: nil)
         alert.addAction(action)
         present(alert, animated: true)
@@ -46,6 +44,11 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         targetValue = Int.random(in: 1...100)
+        updateLabels()
+    }
+    
+    func updateLabels() {
+        scoreLabel.text = String(score)
         targetLabel.text = String(targetValue)
     }
     
