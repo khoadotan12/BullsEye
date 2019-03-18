@@ -26,19 +26,24 @@ class ViewController: UIViewController {
     
     @IBAction func showHitMeAlert() {
         let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
-        score += points
+        var points = 100 - difference
         
         let title: String
-        if (difference == 0) {
+        if difference == 0 {
             title = "Perfect!"
-        } else if (difference < 5) {
+            points += 100
+        } else if difference < 5 {
             title = "You almost had it!"
-        } else if (difference < 10) {
+            if difference == 1 {
+                points += 50
+            }
+        } else if difference < 10 {
             title = "Pretty good!"
         } else {
             title = "Not even close..."
         }
+        
+        score += points
         
         let message = "You scored \(points) points"
         let alert = UIAlertController(title: title, message:  message, preferredStyle: .alert)
