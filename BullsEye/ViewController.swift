@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     
     @IBAction func showHitMeAlert() {
         let message = "The value of the slider is now: \(currentValue)"
+        print(abs(currentValue-targetValue))
         let alert = UIAlertController(title: "Hello world!", message:  message, preferredStyle: .alert)
         
         let action = UIAlertAction(title: "Awesome", style: .cancel, handler: nil)
