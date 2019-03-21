@@ -25,10 +25,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showHitMeAlert() {
-        let difference = abs(currentValue - targetValue)
-        var points = 100 - difference
+        //Instance variables: currentValue, targetValue, score
+        let difference = abs(currentValue - targetValue) //Local variable
+        var points = 100 - difference //Local variable
         
-        let title: String
+        let title: String //Local variables
         if difference == 0 {
             title = "Perfect!"
             points += 100
@@ -45,9 +46,9 @@ class ViewController: UIViewController {
         
         score += points
         
-        let message = "You scored \(points) points"
-        let alert = UIAlertController(title: title, message:  message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "Awesome", style: .cancel, handler: nil)
+        let message = "You scored \(points) points" //Local variable
+        let alert = UIAlertController(title: title, message:  message, preferredStyle: .alert) //Local variable
+        let action = UIAlertAction(title: "Awesome", style: .cancel, handler: nil) //Local variable
         alert.addAction(action)
         present(alert, animated: true)
         startNewRound()
