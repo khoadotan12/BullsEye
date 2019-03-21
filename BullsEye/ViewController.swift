@@ -48,10 +48,12 @@ class ViewController: UIViewController {
         
         let message = "You scored \(points) points" //Local variable
         let alert = UIAlertController(title: title, message:  message, preferredStyle: .alert) //Local variable
-        let action = UIAlertAction(title: "Awesome", style: .cancel, handler: nil) //Local variable
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: {
+            action in
+            self.startNewRound()
+        }) //Local variable
         alert.addAction(action)
         present(alert, animated: true)
-        startNewRound()
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
