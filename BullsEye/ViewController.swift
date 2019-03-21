@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        startNewRound()
+        resetGame()
     }
     
     @IBAction func showHitMeAlert() {
@@ -72,6 +72,12 @@ class ViewController: UIViewController {
         scoreLabel.text = String(score)
         targetLabel.text = String(targetValue)
         roundLabel.text = String(round)
+    }
+    
+    @IBAction func resetGame() {
+        score = 0;
+        round = 0;
+        startNewRound();
     }
     
 }

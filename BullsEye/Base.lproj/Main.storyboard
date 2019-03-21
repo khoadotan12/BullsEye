@@ -82,6 +82,9 @@
                                 <rect key="frame" x="176" y="308" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="resetGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYa-11-y7n"/>
+                                </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sKX-S7-GBj">
                                 <rect key="frame" x="190" y="176" width="516" height="30"/>
