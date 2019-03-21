@@ -75,9 +75,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetGame() {
-        score = 0;
-        round = 0;
-        startNewRound();
+        score = 0
+        round = 0
+        startNewRound()
     }
     
 }
