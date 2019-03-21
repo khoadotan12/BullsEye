@@ -13,6 +13,7 @@
 		2A08A8B3223CC64A0037210C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A08A8B2223CC64A0037210C /* Assets.xcassets */; };
 		2A08A8B6223CC64A0037210C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A08A8B4223CC64A0037210C /* LaunchScreen.storyboard */; };
 		2A9351822243E39100699E2D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9351812243E39100699E2D /* AboutViewController.swift */; };
+		2A9351842243E8B200699E2D /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9351832243E8B200699E2D /* AboutAuthorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2A08A8B5223CC64A0037210C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A08A8B7223CC64A0037210C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9351812243E39100699E2D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2A9351832243E8B200699E2D /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				2A08A8AB223CC6470037210C /* AppDelegate.swift */,
 				2A08A8AD223CC6470037210C /* ViewController.swift */,
+				2A9351832243E8B200699E2D /* AboutAuthorViewController.swift */,
 				2A9351812243E39100699E2D /* AboutViewController.swift */,
 				2A08A8AF223CC6470037210C /* Main.storyboard */,
 				2A08A8B2223CC64A0037210C /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				2A9351822243E39100699E2D /* AboutViewController.swift in Sources */,
 				2A08A8AE223CC6470037210C /* ViewController.swift in Sources */,
 				2A08A8AC223CC6470037210C /* AppDelegate.swift in Sources */,
+				2A9351842243E8B200699E2D /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
