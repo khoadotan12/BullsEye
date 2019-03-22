@@ -31,11 +31,11 @@ class ViewController: UIViewController {
         
         let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
         let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
-        slider.setMinimumTrackImage(trackLeftResizeable, for: .normal)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
         
         let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
         let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
-        slider.setMaximumTrackImage(trackRightResizeable, for: .normal)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
     
     @IBAction func showHitMeAlert() {
